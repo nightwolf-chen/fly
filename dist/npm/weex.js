@@ -236,9 +236,7 @@ function EngineWrapper(adapter) {
                         body: arg
                     };
                     util.merge(request, self._options || {});
-                    if (request.method === "GET") {
-                        request.body = null;
-                    }
+             
                     self._changeReadyState(3);
                     var timer = void 0;
                     self.timeout = self.timeout || 0;
