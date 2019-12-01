@@ -145,6 +145,7 @@ class Fly {
                 }
 
                 let responseType = utils.trim(options.responseType || "")
+                //!
                 let needQuery = false
                 let dataType = utils.type(data);
                 let params = options.params || {};
