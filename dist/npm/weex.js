@@ -519,7 +519,7 @@ var Fly = function () {
                     }
 
                     var responseType = utils.trim(options.responseType || "");
-                    var needQuery = ["GET", "HEAD", "DELETE", "OPTION"].indexOf(options.method) !== -1;
+                    var needQuery = false;
                     var dataType = utils.type(data);
                     var params = options.params || {};
 
